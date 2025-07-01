@@ -1,0 +1,29 @@
+<form >
+  <div class = "mb-3">
+    <label for = TextNumeroUno class = "form-label"> Número Uno:</label>
+    <input
+     type = "number" class = "form-control" id = "TextNumeroUno" name = "TextNumeroUno"
+      (ngModel)="numero1"
+     required>
+
+
+  </div>
+  <div>
+    <label for = TextNumeroDos class = "form-label"> Número Dos:</label>
+    <input type = "number" class = "form-control" id = "TextNumeroDos" name = "TextNumeroDos"
+      (ngModel)="numero2"
+    required>
+
+  </div>
+  <div class = "mb-3">
+    <label for = TextResultado class = "form-label"> Resultado: {{ resultado }}</label>
+  </div>
+  <div class = "mb-3">
+    <label for = SelectOperacion class = "form-label"> Operación:</label>
+      <button class = "btn " (click) = "sumar()" >Suma</button>
+      <button class = "btn" (click) = "restar()" >Resta</button>
+      <button class = "btn"(click) = "multiplicar()">Multiplicación</button>
+      <button class = "btn"(click) = "dividir()">División</button>
+
+  </div>
+</form>
